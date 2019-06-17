@@ -1,2 +1,5 @@
 # YogaLife_Template
-YogaLife is Template developed using html, css and javascript.
+Welcome To Yogalife
+
+
+Work in progress
