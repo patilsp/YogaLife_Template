@@ -77,19 +77,14 @@
             transform: translateX(1rem);
         }
     }
-
-
-    
-
     &__logo-box {
         position: absolute;
         top: 4rem;
         left: 4rem;
     }
-
     &__logo {
         height: 1rem;
-        color: #35db4b;
+        color: #F5F5F5;
         font-size: 26px;
         padding: 10px;
         font-weight: 900;        
@@ -102,5 +97,35 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }  
-  
+    &__sidebar{
+        position: absolute;
+        float: right;
+        top: 30%;
+        right: 0%;
+        background-color: transparent;
+        height: 40%;
+        width: 5%;
+
+    }
+    &__icon{
+        height: 60px;
+        
+    }
+    &__icon-box{
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        font-size: 36px;
+        color: #ff0000;
+        font-weight: 700;
+
+    }
+    &__icon-text{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        color: lightgreen;
+    }
 }

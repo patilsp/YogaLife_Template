@@ -182,9 +182,8 @@ body {
   border-radius: 3rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
-  color: #f5f5f5;
-  background: linear-gradient(45deg, #ff0055 0%, #ff6600 100%);
+  font-size: 14px;
+  color: #84e984;
   border: none;
   cursor: pointer; }
 
@@ -280,18 +279,18 @@ body {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 23rem;
+    height: 25rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ffb900), url(../img/image_1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #7ed56f), url(../img/program-5.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #2998ff), url(../img/gallery-3.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -808,7 +807,7 @@ body {
     left: 4rem; }
   .header__logo {
     height: 1rem;
-    color: #35db4b;
+    color: #F5F5F5;
     font-size: 26px;
     padding: 10px;
     font-weight: 900; }
@@ -818,6 +817,30 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__sidebar {
+    position: absolute;
+    float: right;
+    top: 30%;
+    right: 0%;
+    background-color: transparent;
+    height: 40%;
+    width: 5%; }
+  .header__icon {
+    height: 60px; }
+  .header__icon-box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #ff0000;
+    font-weight: 700; }
+  .header__icon-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    color: lightgreen; }
 
 .navigation__checkbox {
   display: none; }
