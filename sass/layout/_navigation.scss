@@ -5,14 +5,14 @@
 
     &__button {
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
+        height: 6.5rem;
+        width: 6.5rem;
         position: fixed;
-        top: 4rem;
-        right: 5rem;
+        top: 3rem;
+        right: 4rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        box-shadow: 0 1rem 3rem rgba($color-black, .6);
         text-align: center;
         cursor: pointer;
 
@@ -28,8 +28,8 @@
     }
 
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
         border-radius: 50%;
         position: fixed;
         top: 4.5rem;

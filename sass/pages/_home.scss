@@ -44,7 +44,7 @@
 
 .section-book {
     padding: 10rem 0;
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background: transparent;
 
     @include respond(tab-port) {
         padding: 10rem 0;
@@ -53,10 +53,10 @@
 
 .book {
     background-image: linear-gradient(105deg, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 50%,
+                                    rgba(#62e068, .6) 0%,
+                                    rgba(#48c438, .6) 50%,
                                     transparent 50%) ,
-                            url(../img/nat2.jpg);
+                            url(../img/image_3.jpg);
     background-size: 100%;
     border-radius: 3px;
     height: 90vh;

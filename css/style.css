@@ -419,7 +419,7 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -441,18 +441,18 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .form__group:not(:last-child) {
-  margin-bottom: 1rem; }
+  margin-bottom: .5rem; }
 
 .form__input {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: inherit;
   color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 80%;
+  width: 60%;
   display: block;
   transition: all .3s; }
   @media only screen and (max-width: 56.25em) {
@@ -768,29 +768,29 @@ body {
       -webkit-clip-path: polygon(0 0, rgba(126, 213, 111, 0.8), 100% 0, 100% 85vh, 0 100%); } }
   .header__navbar {
     position: absolute;
-    top: 3%;
-    left: 10%;
+    top: 2%;
+    left: 12%;
     text-align: center;
     background-color: transparent;
     height: 10rem;
     width: 90rem; }
   .header__nav-list {
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 15%;
+    left: 18%;
     display: flex;
     flex-direction: row;
     list-style: none;
     text-align: center;
     width: 100%;
-    font-size: 14px;
-    font-weight: 400; }
+    font-size: 15px;
+    font-weight: 600; }
   .header__item {
     margin: 1rem; }
   .header__link:link, .header__link:visited {
     display: inline-block;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 1rem 2rem;
     color: #fff;
     text-decoration: none;
@@ -804,13 +804,13 @@ body {
     transform: translateX(1rem); }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 3rem;
+    left: 3rem; }
   .header__logo {
     height: 1rem;
     color: #F5F5F5;
     font-size: 26px;
-    padding: 10px;
+    padding: 5px;
     font-weight: 900; }
   .header__text-box {
     position: absolute;
@@ -823,22 +823,35 @@ body {
     float: left;
     top: 20%;
     left: 0%;
-    background-color: yellow;
+    background-color: transparent;
     height: 65%;
-    width: 10%;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    text-orientation: sideways;
-    text-orientation: sideways;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 10px;
-    z-index: 2; }
+    width: 10%; }
+  .header__social-box {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    text-decoration: none; }
+  .header__btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative; }
+  .header__btn i {
+    line-height: 20px;
+    font-size: 26px;
+    transition: 0.2s linear; }
   .header__sidebar {
     position: absolute;
     float: right;
@@ -885,20 +898,25 @@ body {
     display: flex;
     justify-content: center;
     color: #77cf77; }
+  .header__nav-links {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ccc; }
 
 .navigation__checkbox {
   display: none; }
 
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 6.5rem;
+  width: 6.5rem;
   position: fixed;
-  top: 4rem;
-  right: 5rem;
+  top: 3rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
   text-align: center;
   cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
@@ -911,8 +929,8 @@ body {
       right: 3rem; } }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
   top: 4.5rem;
@@ -1046,13 +1064,13 @@ body {
 
 .section-book {
   padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  background: transparent; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat2.jpg);
+  background-image: linear-gradient(105deg, rgba(98, 224, 104, 0.6) 0%, rgba(72, 196, 56, 0.6) 50%, transparent 50%), url(../img/image_3.jpg);
   background-size: 100%;
   border-radius: 3px;
   height: 90vh;

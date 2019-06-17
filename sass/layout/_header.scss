@@ -28,8 +28,8 @@
     }
     &__navbar{
         position: absolute;
-        top: 3%;
-        left: 10%;
+        top: 2%;
+        left: 12%;
         text-align: center;
         background-color: transparent;
         height: 10rem;
@@ -38,15 +38,15 @@
     }
     &__nav-list {
         position: absolute;
-        top: 20%;
-        left: 15%;
+        top: 15%;
+        left: 18%;
         display: flex;
         flex-direction: row;
         list-style: none;
         text-align: center;
         width: 100%;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     &__item {
@@ -58,7 +58,7 @@
         &:visited {
             display: inline-block;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 700;
             padding: 1rem 2rem;
             color: $color-white;
             text-decoration: none;
@@ -79,14 +79,14 @@
     }
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 3rem;
+        left: 3rem;
     }
     &__logo {
         height: 1rem;
         color: #F5F5F5;
         font-size: 26px;
-        padding: 10px;
+        padding: 5px;
         font-weight: 900;        
     }
     
@@ -102,22 +102,43 @@
         float: left;
         top: 20%;
         left: 0%;
-        background-color: yellow;
+        background-color: transparent;
         height: 65%;
         width: 10%;
-        -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-        writing-mode: vertical-lr;
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
-        text-orientation: sideways;
-        text-orientation: sideways;
-        text-transform: uppercase;
-        font-weight: 700;   
-        letter-spacing: 2px;
-        font-size: 10px;
-        z-index: 2;
+        
+    }
+    &__social-box{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0px 15px 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__btn{
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: space-between;
+        width: 50px;
+        height: 50px;
+        background: #f1f1f1;
+        margin: 5px;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #3498db;
+        overflow: hidden;
+        position: relative;
+        
+    }
+    
+    &__btn i{
+        line-height: 20px;
+        font-size: 26px;
+        transition: 0.2s linear;
+        
     }
     &__sidebar{
         position: absolute;
@@ -172,4 +193,12 @@
         justify-content: center;
         color: #77cf77;
       }
+      &__nav-links{
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #ccc;
+      }
+
+
 }

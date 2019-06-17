@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -73,11 +74,12 @@
                 <div class="header__left-sidebar">
                     <div class="header__social-box">
                         <ul>
-                            <li><a href="#" class="header__social-icon"><span class="header__social-icons fab fa-facebook"></span>Facebook</a></li>
-                            <li><a href="#" class="header__social-icon"><span" class="icon-basic-alarm"></span></a></li>
-                            <li><a href="#" class="header__social-icon"><span class="header__social-icons icon-basic-instagram"></span></a></li>
-                            <li><a href="#" class="header__social-icon"><span class="header__social-icons icon-basic-github"></span></a></li>
-                            <li><a href="#" class="header__social-icon"><span class="header__social-icons icon-basic-linkedin"></span></a></li>
+                            <li><a class="header__btn" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="header__btn" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="header__btn" href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="header__btn" href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a class="header__btn" href="#"><i class="fab fa-github"></i></a></li>
+                          
                         </ul>
                     </div>
                 </div>
@@ -92,12 +94,12 @@
                 </div>
             </header>
         <main>
-        <div class="site-block-half d-flex p-lg-2">
-            <div class="image bg-image" style="background-image: url('img/intro.JPG');"></div>
+        <div class="container site-block-half d-flex py-lg-4 m-2">
+            <div class="image bg-image" style="background-image: url('img/trainer-4.jpg');"></div>
             <div class="text">
                 <h2 class="heading-secondary">Welcome To Yoga life</h2>
                 <p class="paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <ul class="mt-5 do-list">
+                    <ul class="header__nav-links">
                         <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga boosts brain power</a></li>
                         <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga helps you to breathe better</a></li>
                         <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga improves your strength</a></li>
@@ -105,8 +107,9 @@
                         <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga helps give meaning to your day</a></li>
                     </ul>
                     <p><a href="#" class="btn btn--green">See The Yoga </a></p>
-                </div>
+                </ul>
             </div>       
+            
             </div>
         
             <section class="section-about">
@@ -146,17 +149,17 @@
                                  class="composition__photo composition__photo--p2"
                                  src="img/image_3.jpg">
 
-                            <img srcset="img/image_6.jpg 300w, img/image_6.jpg 1000w"
+                            <img srcset="img/image_5.jpg 300w, img/image_5.jpg 1000w"
                                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                                  alt="Photo 3"
                                  class="composition__photo composition__photo--p3"
-                                 src="img/image_6.jpg">
+                                 src="img/image_5.jpg">
 
                             
                             <img src="img/img_4.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/image_3.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/image_6.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            
+                            <img src="img/image_5.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                                                 
                         </div>
                     </div>
                 </div>
@@ -336,7 +339,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                            <img src="img/image_4.jpg" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -353,7 +356,7 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <img src="img/img_2.jpg" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -399,14 +402,13 @@
                                 <div class="form__group">
                                     <input type="email" class="form__input" placeholder="Send Message" id="email" required>
                                     <label for="email" class="form__label">Email address</label>
-                                </div>
-
+                              </div>                   
                                
-
-                                   
                                 <div class="form__group">
                                     <button class="btn btn--green">submit</button>
+                                    <button class="btn btn-outline-white btn--green">Reset</button>
                                 </div>
+                             
                             </form>
                         </div>
                     </div>
