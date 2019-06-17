@@ -3,8 +3,8 @@
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(#f1f1f1, 0.2),
-        rgba(#ccc, 0.4)),
+        rgba(#ffffff, 0.1),
+        rgba(#f8f7f7, 0.0)),
     url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
@@ -38,15 +38,15 @@
     }
     &__nav-list {
         position: absolute;
-        top: 10%;
-        left: 10%;
+        top: 20%;
+        left: 15%;
         display: flex;
         flex-direction: row;
         list-style: none;
         text-align: center;
         width: 100%;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     &__item {
@@ -57,7 +57,7 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 2rem;
+            font-size: 16px;
             font-weight: 600;
             padding: 1rem 2rem;
             color: $color-white;
@@ -97,35 +97,79 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }  
+    &__left-sidebar{
+        position: absolute;
+        float: left;
+        top: 20%;
+        left: 0%;
+        background-color: yellow;
+        height: 65%;
+        width: 10%;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        text-orientation: sideways;
+        text-orientation: sideways;
+        text-transform: uppercase;
+        font-weight: 700;   
+        letter-spacing: 2px;
+        font-size: 10px;
+        z-index: 2;
+    }
     &__sidebar{
         position: absolute;
         float: right;
         top: 30%;
         right: 0%;
         background-color: transparent;
+        height: 65%;
+        width: 15%;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        text-orientation: sideways;
+        text-orientation: sideways;
+        text-transform: uppercase;
+        font-weight: 700;   
+        letter-spacing: 2px;
+        font-size: 10px;
+        z-index: 9;
+      
+    }
+    &__icon-box {
         height: 40%;
-        width: 5%;
-
-    }
-    &__icon{
-        height: 60px;
-        
-    }
-    &__icon-box{
-        display: flex;
-        text-align:center;
-        justify-content: center;
-        font-size: 36px;
-        color: #ff0000;
+        width: 40%;
+        font-size: 30px;
         font-weight: 700;
+        color: #ff0000;
+    }
+ 
+    &__icon-boxs{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        left: 5px;
+        top: 90%;
+        width: 50px;
+        height: 60px;
+        border: 2px solid #ff0000;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
 
     }
     &__icon-text{
         text-align: center;
-        font-size: 16px;
-        font-weight: 400;
+        font-weight: 700;
+        font-size: 18px;
         display: flex;
         justify-content: center;
-        color: lightgreen;
-    }
+        color: #77cf77;
+      }
 }
