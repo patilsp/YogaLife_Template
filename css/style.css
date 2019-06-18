@@ -70,7 +70,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #55c57a;
+  background-color: #8ee9ac;
   color: #fff; }
 
 body {
@@ -87,8 +87,8 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 1rem;
+    font-weight: 600;
+    letter-spacing: 5px;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
@@ -98,6 +98,7 @@ body {
         font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1rem;
@@ -111,7 +112,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #65df4f, #09c788);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -206,10 +207,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #55c57a;
+  background-color: #8ee9ac;
   color: #F5F5F5 !important; }
   .btn--green::after {
-    background-color: #55c57a;
+    background-color: #8ee9ac;
     color: #F5F5F5; }
 
 .btn::after {
@@ -230,15 +231,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #8ee9ac;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #8ee9ac;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #55c57a;
+  background-color: #8ee9ac;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -271,7 +272,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-image: linear-gradient(to right bottom, #65df4f, #09c788); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -289,9 +290,9 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ffb900), url(../img/image_1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #7ed56f), url(../img/program-5.jpg); }
+      background-image: linear-gradient(to right bottom, #65df4f, #65df4f), url(../img/program-5.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #2998ff), url(../img/gallery-3.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #2998ff), url(../img/program-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -309,7 +310,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(101, 223, 79, 0.85), rgba(9, 199, 136, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -431,7 +432,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #65df4f, #09c788);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -461,7 +462,7 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #55c57a; }
+    border-bottom: 3px solid #8ee9ac; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
@@ -500,7 +501,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #55c57a;
+  border: 5px solid #8ee9ac;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -516,7 +517,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #55c57a;
+    background-color: #8ee9ac;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -594,7 +595,7 @@ body {
     transition: all .2s;
     line-height: 1; }
   .popup__close:hover {
-    color: #55c57a; }
+    color: #8ee9ac; }
 
 .story {
   width: 75%;
@@ -700,7 +701,7 @@ body {
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #55c57a;
+    color: #8ee9ac;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
@@ -754,18 +755,18 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  position: absolute;
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(248, 247, 247, 0)), url(../img/hero-small.jpg);
+  position: relative;
+  height: 98vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(101, 223, 79, 0.4), rgba(142, 233, 172, 0.2)), url(../img/banner.jpg);
   background-size: cover;
-  background-position: top;
-  position: relative; }
+  background-position: top; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(241, 241, 241, 0.2), rgba(204, 204, 204, 0.4)), url(../img/hero-small.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(241, 241, 241, 0.2), rgba(204, 204, 204, 0.4)), url(../img/banner.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, rgba(126, 213, 111, 0.8), 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, rgba(101, 223, 79, 0.8), 100% 0, 100% 85vh, 0 100%); } }
   .header__navbar {
     position: absolute;
     top: 2%;
@@ -800,7 +801,7 @@ body {
     transition: all .2s; }
   .header__link:hover, .header__link:active {
     background-position: 100%;
-    color: #55c57a;
+    color: #8ee9ac;
     transform: translateX(1rem); }
   .header__logo-box {
     position: absolute;
@@ -814,7 +815,7 @@ body {
     font-weight: 900; }
   .header__text-box {
     position: absolute;
-    top: 60%;
+    top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -839,13 +840,14 @@ body {
     justify-content: center;
     text-align: center;
     align-content: space-between;
+    padding-top: 1.5rem;
     width: 50px;
     height: 50px;
     background: #f1f1f1;
     margin: 5px;
     border-radius: 30px;
     box-shadow: 0 5px 15px -5px #00000070;
-    color: #3498db;
+    color: #0c87da;
     overflow: hidden;
     position: relative; }
   .header__btn i {
@@ -935,7 +937,7 @@ body {
   position: fixed;
   top: 4.5rem;
   right: 5rem;
-  background-image: radial-gradient(#7ed56f, #28b485);
+  background-image: radial-gradient(#65df4f, #09c788);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -986,7 +988,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #55c57a;
+  color: #8ee9ac;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -1040,7 +1042,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.2), rgba(40, 180, 133, 0.2)), url(../img/image_6.jpg);
+  background-image: linear-gradient(to right bottom, rgba(101, 223, 79, 0.2), rgba(9, 199, 136, 0.2)), url(../img/bg-1.jpg);
   background-size: cover;
   margin-top: -10rem; }
   @media only screen and (max-width: 56.25em) {
@@ -1064,25 +1066,26 @@ body {
 
 .section-book {
   padding: 10rem 0;
-  background: transparent; }
+  background-image: radial-gradient(#65df4f, #09c788); }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(98, 224, 104, 0.6) 0%, rgba(72, 196, 56, 0.6) 50%, transparent 50%), url(../img/image_3.jpg);
+  background-image: linear-gradient(105deg, rgba(119, 119, 119, 0.6) 0%, rgba(247, 247, 247, 0.9) 50%, transparent 40%), url(../img/bg-13.jpg);
   background-size: 100%;
   border-radius: 3px;
-  height: 90vh;
-  width: 95%;
+  height: 95vh;
+  width: 100%;
+  margin: 2rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/bg-13.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/bg-7.jpg); } }
   .book__form {
     width: 50%;
     padding: 2rem; }
