@@ -130,7 +130,9 @@
         color: #0c87da;
         overflow: hidden;
         position: relative;
-        
+        &:hover {
+            transform: translateY(-.5rem) scale(1.03);
+        }
     }
     
     &__btn i{
