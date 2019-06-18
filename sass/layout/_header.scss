@@ -33,6 +33,7 @@
         height: 10rem;
         width: 90rem;
         
+        
     }
     &__nav-list {
         position: absolute;
@@ -74,6 +75,10 @@
             color: $color-primary;
             transform: translateX(1rem);
         }
+        @include respond(phone) {
+           opacity: 0;
+
+        }
     }
     &__logo-box {
         position: absolute;
@@ -103,8 +108,9 @@
         background-color: transparent;
         height: 65%;
         width: 10%;
-        
-    }
+      
+    
+   }
     &__social-box{
         position: absolute;
         top: 10%;
@@ -199,6 +205,7 @@
           font-weight: 700;
           text-decoration: none;
           color: #ccc;
+          
       }
 
 
