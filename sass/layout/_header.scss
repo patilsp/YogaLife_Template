@@ -1,0 +1,205 @@
+.header {
+    position: relative;
+    height: 98vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.4),
+        rgba($color-primary, 0.2)),
+    url(../img/banner.jpg);
+    background-size: cover;
+    background-position: top;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba(#f1f1f1, 0.2),
+                    rgba(#ccc, 0.4)),
+                url(../img/banner.jpg);
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0,  rgba($color-primary-light, 0.8), 100% 0, 100% 85vh, 0 100%);
+     
+    }
+    &__navbar{
+        position: absolute;
+        top: 2%;
+        left: 12%;
+        text-align: center;
+        background-color: transparent;
+        height: 10rem;
+        width: 90rem;
+        
+    }
+    &__nav-list {
+        position: absolute;
+        top: 15%;
+        left: 18%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__item {
+        margin: 1rem;
+        
+    }
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #f7f7f7 50%);
+            background-size: 250%;
+            transition: all .2s;
+
+           
+        }
+        
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+    }
+    &__logo-box {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+    &__logo {
+        height: 1rem;
+        color: #F5F5F5;
+        font-size: 26px;
+        padding: 5px;
+        font-weight: 900;        
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }  
+    &__left-sidebar{
+        position: absolute;
+        float: left;
+        top: 20%;
+        left: 0%;
+        background-color: transparent;
+        height: 65%;
+        width: 10%;
+        
+    }
+    &__social-box{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0px 15px 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__btn{
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: space-between;
+        padding-top: 1.5rem;
+        width: 50px;
+        height: 50px;
+        background: #f1f1f1;
+        margin: 5px;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px -5px #00000070;
+        color: #0c87da;
+        overflow: hidden;
+        position: relative;
+        &:hover {
+            transform: translateY(-.5rem) scale(1.03);
+        }
+    }
+    
+    &__btn i{
+        line-height: 20px;
+        font-size: 26px;
+        transition: 0.2s linear;
+        
+    }
+    &__sidebar{
+        position: absolute;
+        float: right;
+        top: 30%;
+        right: 0%;
+        background-color: transparent;
+        height: 65%;
+        width: 15%;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        text-orientation: sideways;
+        text-orientation: sideways;
+        text-transform: uppercase;
+        font-weight: 700;   
+        letter-spacing: 2px;
+        font-size: 10px;
+        z-index: 9;
+      
+    }
+    &__icon-box {
+        height: 40%;
+        width: 40%;
+        font-size: 30px;
+        font-weight: 700;
+        color: #ff0000;
+    }
+ 
+    &__icon-boxs{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        left: 5px;
+        top: 90%;
+        width: 50px;
+        height: 60px;
+        border: 2px solid #ff0000;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
+
+    }
+    &__icon-text{
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        color: #77cf77;
+      }
+      &__nav-links{
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #ccc;
+      }
+
+
+}
