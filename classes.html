@@ -12,59 +12,54 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-	<title>Yogalife</>
+	<title>Yogalife</title>
 </head>
 <body>
-<div class="site-wrap">
-	<div class="site-mobile-menu">
-	<div class="site-mobile-menu-header">
-	<div class="site-mobile-menu-close mt-3">
-		<span class="icon-close2 js-menu-toggle"></span>
-	</div>
-	</div>
-	<div class="site-mobile-menu-body"></div>
-</div> 
 
-<div class="navigation">
-	<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-	<label for="navi-toggle" class="navigation__button">
-		<span class="navigation__icon">&nbsp;</span>
-	</label>
-	<div class="navigation__background">&nbsp;</div>
-	<nav class="navigation__nav">
-		<ul class="navigation__list">
-			<li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-			<li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-			<li class="navigation__item"><a href="#" class="navigation__link">Yogalife</a></li>
-			<li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-			<li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-			<li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
-		</ul>
-	</nav>
-</div>
+		<div class="navigation">
+				<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+				<label for="navi-toggle" class="navigation__button">
+					<span class="navigation__icon">&nbsp;</span>
+				</label>
+				<div class="navigation__background">&nbsp;</div>
+				<nav class="navigation__nav">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+						<li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+						<li class="navigation__item"><a href="#yogalife" class="navigation__link">Yogalife</a></li>
+						<li class="navigation__item"><a href="#blog" class="navigation__link">Blog</a></li>
+						<li class="navigation__item"><a href="#book" class="navigation__link">Book Classes</a></li>
+						<li class="navigation__item"><a href="#about" class="navigation__link">About Us</a></li>
+						<li class="navigation__item"><a href="#contact" class="navigation__link">Contact Us</a></li>
+						</ul>
+				</nav>
+			</div>
+	
+			<header class="header" id="home">
+				<div class="header__logo-box">
+						<a href="index.html" class="header__logo"><sapn>Yoga Life</sapn></a>
+					</div>
+				 <div class="header__navbar">
+					<ul class="header__nav-list">
+							<li class="header__item"><a href="#home" class="header__link">Home</a></li>
+							<li class="header__item"><a href="#services" class="header__link">Services</a></li>
+							<li class="header__item"><a href="#yogalife" class="header__link">Yogalife</a></li>
+							<li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+							<li class="header__item"><a href="#book" class="header__link">Classes</a></li>
+							<li class="header__item"><a href="#about" class="header__link">About</a></li>
+							<li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+					</ul>
 
-<header class="header">
-	<div class="header__logo-box">
-			<a href="index.html" class="header__logo"><sapn>Yoga Life</sapn></a>
-		</div>
-		<div class="header__navbar">
-		<ul class="header__nav-list">
-				<li class="header__item"><a href="#" class="header__link">Home</a></li>
-				<li class="header__item"><a href="#" class="header__link">Services</a></li>
-				<li class="header__item"><a href="#" class="header__link">Yogalife</a></li>
-				<li class="header__item"><a href="#" class="header__link">Blog</a></li>
-				<li class="header__item"><a href="#" class="header__link">About</a></li>
-				<li class="header__item"><a href="#" class="header__link">Contact</a></li>
-		</ul>
-  </div> 
-	<div class="header__text-box">
-	<h4 class="heading-primary">
-		<span class="heading-primary--main">Welcome To Yogalife</span>
-		<span class="heading-primary--sub">Do Yoga today for a better tomorrow.</span>
-	</h4>
-		<a href="#" class="btn btn--white btn--animated">DISCOVER NOW</a>
-	</div>             
-</header>
+			</div> 
+			<div class="header__text-box">
+			<h4 class="heading-primary">
+				<span class="heading-primary--main">Welcome To Yogalife</span>
+				<span class="heading-primary--sub">Do Yoga today for a better tomorrow.</span>
+			</h4>
+				<a href="#" class="btn btn--white btn--animated">DISCOVER NOW</a>
+			</div>
+   		</div>
+	</header>
 
 <section class="container-fluid">
 	<div class="u-center-text u-margin-bottom-big">
@@ -109,7 +104,7 @@
 						<p><a href="#" class="btn btn--green">See The Yoga </a></p>
 					</ul>
 				</div> 
-				<div class="image bg-image img-fluid" style="background-image: url('img/bg-13.jpg');"></div>      
+				<div class="image bg-image img-fluid" style="background-image: url('img/program-5.jpg');"></div>      
 				</div>
 	</section>
 	
@@ -130,7 +125,7 @@
 				
 					</div>
 					<div class="column">
-							<img src="img/img_1.jpg">
+							<img src="img/img-1.jpg">
 							<img src="img/img_2.jpg">
 							<img src="img/img_3.jpg">
 							
@@ -208,6 +203,9 @@
 		
 		</div>
 		</footer>
-
+		<script src="js/smooth-scroll.js"></script>
+        <script>
+                var scroll = new SmoothScroll('a[href*="#"]');
+            </script>
 </body>
 </html>

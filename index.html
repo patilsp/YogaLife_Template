@@ -12,16 +12,7 @@
         <title>Yogalife</title>
     </head>
     <body>
-        <div class="site-wrap">
-            <div class="site-mobile-menu">
-              <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                  <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-              </div>
-              <div class="site-mobile-menu-body"></div>
-            </div> 
-            
+           
             <div class="navigation">
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
                     <label for="navi-toggle" class="navigation__button">
@@ -30,28 +21,30 @@
                     <div class="navigation__background">&nbsp;</div>
                     <nav class="navigation__nav">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Yogalife</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+                            <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                            <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+                            <li class="navigation__item"><a href="#yogalife" class="navigation__link">Yogalife</a></li>
+                            <li class="navigation__item"><a href="#blog" class="navigation__link">Blog</a></li>
+                            <li class="navigation__item"><a href="#book" class="navigation__link">Book Classes</a></li>
+                            <li class="navigation__item"><a href="#about" class="navigation__link">About Us</a></li>
+                            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact Us</a></li>
                             </ul>
                     </nav>
                 </div>
         
-                <header class="header">
+                <header class="header" id="home">
                     <div class="header__logo-box">
                             <a href="index.html" class="header__logo"><sapn>Yoga Life</sapn></a>
                         </div>
                      <div class="header__navbar">
                         <ul class="header__nav-list">
-                                <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Services</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Yogalife</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Blog</a></li>
-                                <li class="header__item"><a href="#" class="header__link">About</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                                <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+                                <li class="header__item"><a href="#services" class="header__link">Services</a></li>
+                                <li class="header__item"><a href="#yogalife" class="header__link">Yogalife</a></li>
+                                <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+                                <li class="header__item"><a href="#book" class="header__link">Classes</a></li>
+                                <li class="header__item"><a href="#about" class="header__link">About</a></li>
+                                <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
                         </ul>
 
                 </div> 
@@ -85,7 +78,7 @@
                 </div>
             </header>
         <main>
-     <div class="banner-section">
+     <div class="banner-section" id="services">
         <div class="row">
             <div class="col-1-of-2">
                 <img src="img/intro.jpg" class="banner-section__bg-img">
@@ -112,7 +105,7 @@
           </div>
         </div>
         
-            <section class="section-about">
+            <section class="section-about" id="yogalife">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                             Do Yoga today for a better tomorrow
@@ -172,7 +165,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-features" id="blog">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -213,7 +206,7 @@
                 </div>
             </section>
 
-            <section class="section-tours" id="section-tours">
+            <section class="section-tours" id="section-tours" id="book">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                             Choose Your Level & Focus
@@ -324,7 +317,7 @@
                 </div>
             </section>
 
-            <section class="section-stories">
+            <section class="section-stories" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         We make people genuinely happy What People Say
@@ -366,7 +359,7 @@
                 </div>
             </section>
 
-            <section class="section-book">
+            <section class="section-book" id="contact">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -406,7 +399,7 @@
             </section>
         </main>
 
-    <footer class="footer">
+    <footer class="footer" id="about-us">
         <div class="row">
             <div class="col-1-of-2">
                 <p class="footer__copyright">
@@ -447,6 +440,9 @@
                 </div>
             </div>
         </div>
-       
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+                var scroll = new SmoothScroll('a[href*="#"]');
+            </script>
     </body>
 </html>
