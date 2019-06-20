@@ -2,34 +2,22 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    font-size: 16px;
     color: $color-grey-dark;
-    
 }
 
-
-a {
-    font-size: 18px;
-    font-weight: 700;
-    color:#ddd;
-
-}
-p{
-    font-size: 16px;
-    font-weight: 400;
-
-}
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
         display: block;
-        font-size: 5rem;
-        font-weight: 600;
-        letter-spacing: 5px;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -38,14 +26,14 @@ p{
             letter-spacing: 1rem;
             font-family: 5rem;
         }
+      
     }
     
     &--sub {
         display: block;
-        margin-top: 1rem;
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 1rem;
+        letter-spacing: 1.75rem;
         animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
@@ -70,7 +58,7 @@ p{
     }
 
     @include respond(phone) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     &:hover {
@@ -83,14 +71,10 @@ p{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #76c776;
 }
 
 .paragraph {
     font-size: $default-font-size;
-    
-
     &:not(:last-child) {
         margin-bottom: 3rem;
     }

@@ -1,20 +1,3 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -64,7 +47,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -77,17 +60,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  font-size: 16px;
   color: #777; }
-
-a {
-  font-size: 18px;
-  font-weight: 700;
-  color: #ddd; }
-
-p {
-  font-size: 16px;
-  font-weight: 400; }
 
 .heading-primary {
   color: #fff;
@@ -96,9 +69,9 @@ p {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 5rem;
-    font-weight: 600;
-    letter-spacing: 5px;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
@@ -108,10 +81,9 @@ p {
         font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
@@ -132,7 +104,7 @@ p {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -140,9 +112,7 @@ p {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #76c776; }
+  text-transform: uppercase; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -440,18 +410,18 @@ p {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .form__group:not(:last-child) {
-  margin-bottom: .5rem; }
+  margin-bottom: 2rem; }
 
 .form__input {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 60%;
+  width: 90%;
   display: block;
   transition: all .3s; }
   @media only screen and (max-width: 56.25em) {
@@ -478,49 +448,6 @@ p {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
-
-.form__radio-group {
-  width: 49%;
-  display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 1rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 4.5rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #46d179;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -.4rem; }
-  .form__radio-button::after {
-    content: "";
-    display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #46d179;
-    opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
 
 .popup {
   height: 100vh;
@@ -660,6 +587,29 @@ p {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.banner-section {
+  position: relative; }
+  .banner-section__bg-img {
+    display: flex;
+    height: 85vh;
+    margin: 10px auto;
+    background: transparent; }
+  .banner-section__box {
+    float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%; }
+  .banner-section__links li a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #645f5f; }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -755,16 +705,21 @@ p {
 .header {
   position: relative;
   height: 98vh;
-  width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(119, 204, 104, 0.4), rgba(70, 209, 121, 0.2)), url(../img/banner.jpg);
+  background-image: linear-gradient(to right bottom, rgba(119, 204, 104, 0.4), rgba(70, 209, 121, 0.2)), url(../../img/banner.jpg);
   background-size: cover;
   background-position: top; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+      height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(241, 241, 241, 0.2), rgba(204, 204, 204, 0.4)), url(../img/banner.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(119, 204, 104, 0.1), rgba(43, 201, 148, 0.1)), url(../img/banner.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, rgba(119, 204, 104, 0.8), 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__navbar {
     position: absolute;
     top: 2%;
@@ -1036,6 +991,13 @@ p {
   top: 0;
   transform: rotate(-135deg); }
 
+.banner-section {
+  background-color: #fff;
+  padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .banner-section {
+      padding: 20rem 0; } }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 15rem 0; }
@@ -1077,10 +1039,10 @@ p {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(119, 119, 119, 0.6) 0%, rgba(247, 247, 247, 0.9) 50%, transparent 40%), url(../img/bg-13.jpg);
+  background-image: linear-gradient(105deg, rgba(119, 119, 119, 0.6) 0%, rgba(247, 247, 247, 0.9) 50%, transparent 40%), url(../img/image_3.jpg);
   background-size: 100%;
   border-radius: 3px;
-  height: 95vh;
+  height: 85vh;
   width: 100%;
   margin: 2rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }

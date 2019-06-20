@@ -1,3 +1,13 @@
+.banner-section {
+    background-color: #fff;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
+
+
 .section-about {
     background-color: $color-grey-light-1;
     padding: 15rem 0;
@@ -62,10 +72,10 @@
                                     rgba($color-grey-dark, .6) 0%,
                                     rgba($color-grey-light-1, .9) 50%,
                                     transparent 40%) ,
-                            url(../img/bg-13.jpg);
+                            url(../img/image_3.jpg);
     background-size: 100%;
     border-radius: 3px;
-    height: 95vh;
+    height: 85vh;
     width: 100%;
     margin: 2rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
